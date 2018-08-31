@@ -1,0 +1,11 @@
+<div class="contents row">
+      <h3>
+        編集する
+      </h3>
+      <%= form_for @write do |f|%>
+        <%= f.text_field :image%>
+        <%= f.text_area :text %>
+        <%= f.text_area :introduction%>
+        <%= f.submit :"送信する" %>
+      <% end %>
+  </div>

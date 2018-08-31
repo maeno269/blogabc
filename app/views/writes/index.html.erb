@@ -1,0 +1,6 @@
+<div class="row" >
+  <% @writes.each do |write| %>
+  <%= render partial: "write", locals: { write: write } %>
+  <% end %>
+</div>
+  <%= paginate(@writes) %>

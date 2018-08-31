@@ -1,0 +1,11 @@
+<div class="contents row ">
+  <h3>
+      投稿する
+  </h3>
+  <%= form_for (@write) do |f| %>
+  <%= f.text_field :text, placeholder:"タイトル" %>
+  <%= f.text_field :image, placeholder:"画像" %>
+  <%= f.text_field :introduction, placeholder:"紹介"%>
+  <%= f.submit :"送信する"%>
+  <% end %>
+</div>
